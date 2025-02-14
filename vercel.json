@@ -1,0 +1,13 @@
+{
+    "rewrites": [
+      { "source": "/", "destination": "/Project1/index.html" },
+      { "source": "/Project1/(.*)", "destination": "/Project1/index.html" },
+      { "source": "/Project2/(.*)", "destination": "/Project2/index.html" }
+    ],
+    "routes": [
+      { "src": "/Project1/(.*)", "dest": "/Project1/$1" },
+      { "src": "/Project2/(.*)", "dest": "/Project2/$1" }
+    ],
+    "cleanUrls": true
+  }
+  
